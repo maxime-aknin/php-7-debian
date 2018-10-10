@@ -24,7 +24,8 @@ sudo apt-get install -y \
     libjpeg-dev \
     libpng-dev \
     libpspell-dev \
-    libreadline-dev
+    libreadline-dev \
+    libmcrypt-dev
 
 sudo mkdir /usr/local/php7
 
