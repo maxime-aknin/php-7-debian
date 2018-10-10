@@ -68,6 +68,7 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
                   --with-readline \
                   --with-curl \
                   --enable-fpm \
+                  --with-mcrypt \
                   --with-fpm-user=www-data \
                   --with-fpm-group=www-data"
 
