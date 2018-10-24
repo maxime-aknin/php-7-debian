@@ -27,17 +27,17 @@ sudo apt-get install -y \
     libreadline-dev \
     libmcrypt-dev
 
-sudo mkdir /usr/local/php7
+sudo mkdir /usr/local/php5
 
 git clone https://github.com/php/php-src.git
 cd php-src
 git fetch --tags --prune
-git checkout tags/php-7.1.23
+git checkout PHP-5.6
 ./buildconf --force
 
-CONFIGURE_STRING="--prefix=/usr/local/php7 \
+CONFIGURE_STRING="--prefix=/usr/local/php5 \
                   --enable-huge-code-pages \
-                  --with-config-file-scan-dir=/usr/local/php7/etc/conf.d \
+                  --with-config-file-scan-dir=/usr/local/php5/etc/conf.d \
                   --enable-bcmath \
                   --with-bz2 \
                   --enable-calendar \
