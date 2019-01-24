@@ -71,7 +71,11 @@ CONFIGURE_STRING="--prefix=/usr/local/php7 \
                   --enable-fpm \
                   --with-mcrypt \
                   --with-fpm-user=www-data \
-                  --with-fpm-group=www-data"
+                  --with-fpm-group=www-data \
+                   --enable-opcache \
+                  " \
+                  
+
 
 ./configure $CONFIGURE_STRING
 
